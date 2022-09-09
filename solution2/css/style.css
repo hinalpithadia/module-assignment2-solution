@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+  }
+  .heading{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 33%;
+    padding: 0 15px;
+  }
+ 
+ 
+  /* Responsive columns */
+  @media screen and (max-width: 991px) {
+    .column {
+      width: 50%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .column-last{
+        width:100%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .column {
+      width: 100%;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    
+  
+    text-align: center;
+    background-color: gray;
+    border:3px solid black;
+  }
+  .card-tag{
+    float: right;
+    margin: 0;
+    border-width: 0px 0px 3px 3px;
+    border-color: black;
+    border-style: solid;
+    padding: 5px 20px;
+    color: #000;
+    font-weight: 600;
+    width: 150px;
+
+  }
+  .tag-bg1{
+    background-color: #D59898;
+  }
+  .tag-bg2{
+    background-color: #C14543;
+    color: #fff;
+  }
+  .tag-bg3{
+    background-color: #E5D198;
+  }
+  .column p{
+    padding: 20px;
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 30px;
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+    line-height: 25px;
+  }
